@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5b3b91">
+  <meta name="description" content="Nisha K — M.Tech Computer Science and Engineering student specializing in Data Science at VIT. Explore academic projects, skills and certification.">
+  <title>Nisha K | Data Science Portfolio</title>
+  <style>
+    :root{--purple:#65439b;--deep:#38235f;--lav:#f3effa;--ink:#282333;--muted:#706b7b;--line:#e8e2f0;--white:#fff;--soft:#fbfaff;--shadow:0 16px 48px rgba(55,34,91,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--white);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit} .wrap{width:min(1100px,calc(100% - 44px));margin:auto}
+    header{height:76px;position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(232,226,240,.8)}
+    .nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.02em;color:var(--deep);font-size:1.15rem;text-decoration:none}.brand span{color:#a487d0}
+    nav{display:flex;align-items:center;gap:25px}nav a{text-decoration:none;font-size:.9rem;color:#625b6e;font-weight:600}nav a:hover,nav a:focus{color:var(--purple)}
+    .menu{display:none;border:0;background:var(--lav);color:var(--deep);border-radius:10px;padding:9px 12px;font-size:1.2rem}
+    .hero{background:radial-gradient(ellipse at 85% 18%,#eee5fa 0,transparent 38%),linear-gradient(130deg,#fbfaff,#fff 58%);padding:104px 0 96px;min-height:510px;display:flex;align-items:center}
+    .eyebrow{color:var(--purple);font-weight:800;text-transform:uppercase;letter-spacing:.16em;font-size:.75rem}
+    h1{font-size:clamp(3rem,7vw,5.2rem);line-height:1.05;letter-spacing:-.055em;margin:17px 0 15px;color:var(--deep)}
+    .hero p{font-size:clamp(1.05rem,2vw,1.28rem);color:#625b6e;max-width:680px;margin:0}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:31px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:12px 20px;border-radius:999px;font-weight:700;font-size:.92rem;border:1px solid var(--purple);transition:.2s}.btn.primary{background:var(--purple);color:white}.btn.secondary{color:var(--purple);background:white}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+    section{padding:82px 0}.section-head{margin-bottom:34px}.section-kicker{color:var(--purple);font-size:.74rem;text-transform:uppercase;letter-spacing:.15em;font-weight:800}.section-head h2{font-size:clamp(2rem,4vw,2.65rem);line-height:1.15;color:var(--deep);letter-spacing:-.035em;margin:8px 0 0}
+    .lead{font-size:1.05rem;color:#625b6e;max-width:850px}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:start}.objective{background:var(--lav);padding:27px 29px;border-radius:18px;border-left:4px solid #9a7bc6}.objective h3{margin:0 0 9px;color:var(--deep);font-size:1.1rem}.objective p{margin:0;color:#625b6e}
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}.fact{padding-bottom:14px;border-bottom:1px solid var(--line)}.fact small{display:block;color:var(--muted);font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700}.fact strong{font-size:.95rem;color:var(--ink)}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px}.skill-group{border-top:2px solid #b69bdc;padding-top:18px}.skill-group h3{color:var(--deep);margin:0 0 15px;font-size:1.08rem}.tags{display:flex;flex-wrap:wrap;gap:9px}.tag{background:var(--lav);color:#554174;padding:8px 12px;border-radius:999px;font-size:.87rem;font-weight:600}
+    #projects{background:var(--soft)}.project{padding:34px 0;border-bottom:1px solid var(--line)}.project:last-child{border:0}.project-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.project h3{font-size:1.45rem;color:var(--deep);margin:0 0 5px}.project-title{color:var(--muted);font-weight:600;margin:0 0 16px}.project p{color:#625b6e;max-width:900px}.project-label{font-size:.72rem;color:var(--purple);font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .medroute{background:white;border:1px solid var(--line);border-radius:20px;padding:26px;margin-top:22px;box-shadow:var(--shadow)}.medroute h4{margin:22px 0 7px;color:var(--deep);font-size:1rem}.medroute h4:first-child{margin-top:0}.medroute p{margin:0}.steps{counter-reset:step;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}.step{position:relative;background:var(--lav);padding:15px 13px;border-radius:12px;font-size:.86rem;color:#544a63}.step:before{counter-increment:step;content:counter(step,decimal-leading-zero);display:block;color:var(--purple);font-weight:800;font-size:.78rem;margin-bottom:7px}
+    .gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:15px;margin-top:23px}.gallery figure{margin:0}.gallery img{width:100%;height:260px;object-fit:cover;border-radius:13px;border:1px solid var(--line);cursor:zoom-in;display:block}.gallery figure:first-child img{object-position:center}.gallery figcaption{font-size:.8rem;color:var(--muted);margin-top:8px}
+    .simple-projects{display:grid;grid-template-columns:1fr 1fr;gap:25px}.simple-project{border-top:2px solid #b69bdc;padding:20px 0}.simple-project h3{margin:0 0 6px;color:var(--deep);font-size:1.18rem}.simple-project p{margin:0;color:#625b6e}
+    .cert-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:38px;align-items:center}.cert-copy h3{font-size:1.35rem;color:var(--deep);margin:8px 0}.cert-copy p{color:var(--muted);margin:5px 0}.cert-image{width:100%;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);cursor:zoom-in;display:block}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:45px}.plain-list{padding:0;list-style:none;margin:14px 0}.plain-list li{padding:8px 0;border-bottom:1px solid var(--line);color:#625b6e}.journey{background:var(--lav);padding:28px;border-radius:18px;color:#5d536c}.journey p{margin:0}.exploring{display:inline-block;color:var(--purple);font-size:1.3rem;font-weight:800;background:var(--lav);padding:13px 19px;border-radius:12px;margin-top:10px}
+    #contact{background:var(--deep);color:white}#contact .section-kicker{color:#c9b5e8}#contact .section-head h2{color:white}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.contact-item{border-top:1px solid rgba(255,255,255,.25);padding-top:16px}.contact-item small{display:block;color:#c9b5e8;text-transform:uppercase;letter-spacing:.1em;font-weight:700;font-size:.72rem}.contact-item a,.contact-item span{display:inline-block;color:white;text-decoration:none;margin-top:6px;font-weight:600;overflow-wrap:anywhere}.contact-item a:hover{text-decoration:underline}.thanks{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin:65px 0 0;letter-spacing:-.03em}.footer{padding:20px 0;background:#2d1b4d;color:#cfc2e0;text-align:center;font-size:.8rem}
+    .modal{position:fixed;inset:0;z-index:50;background:rgba(22,15,34,.88);display:none;align-items:center;justify-content:center;padding:25px}.modal.open{display:flex}.modal img{max-width:min(1100px,95vw);max-height:88vh;object-fit:contain;border-radius:8px}.modal button{position:absolute;top:18px;right:22px;border:0;background:white;color:#38235f;border-radius:50%;width:42px;height:42px;font-size:1.5rem;cursor:pointer}
+    @media(max-width:760px){.wrap{width:min(100% - 34px,600px)}header{height:68px}.menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:68px;background:white;border-bottom:1px solid var(--line);padding:18px 22px 22px;flex-direction:column;align-items:flex-start;gap:15px}nav.open{display:flex}.hero{padding:80px 0;min-height:440px}.about-grid,.cert-layout,.two-col{grid-template-columns:1fr;gap:25px}.skills-grid{grid-template-columns:1fr;gap:25px}.steps{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr}.gallery img{height:auto;max-height:340px;object-fit:contain;background:#f8f6fb}.simple-projects{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr;gap:18px}.project-top{display:block}.medroute{padding:19px}.facts{gap:12px}section{padding:65px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">NISHA<span>.</span></a>
+    <button class="menu" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home"><div class="wrap">
+    <div class="eyebrow">M.Tech · Data Science · VIT</div>
+    <h1>Hi, I'm Nisha K</h1>
+    <p>M.Tech Computer Science and Engineering Student | Data Science Enthusiast</p>
+    <div class="hero-actions"><a class="btn primary" href="#projects">Explore my work</a><a class="btn secondary" href="#contact">Get in touch</a></div>
+  </div></section>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div class="section-kicker">A little about me</div><h2>About Me</h2></div>
+    <div class="about-grid">
+      <div><p class="lead">I am Nisha K, a passionate and enthusiastic M.Tech Computer Science and Engineering student specializing in Data Science at Vellore Institute of Technology. I have a strong interest in Data Science, Data Analytics, and Information Technology.</p>
+      <p class="lead">I have foundational programming knowledge in Python, C, C++, and Java, along with experience working with tools such as VS Code, Jupyter Notebook, and Power BI. Through academic projects, I enjoy exploring new technologies, solving problems, and developing my technical skills. I am a quick learner, adaptable to new environments, and always eager to learn new things.</p>
+      <div class="facts"><div class="fact"><small>College</small><strong>Vellore Institute of Technology</strong></div><div class="fact"><small>Degree</small><strong>M.Tech – CSE</strong></div><div class="fact"><small>Specialization</small><strong>Data Science</strong></div><div class="fact"><small>Expected graduation</small><strong>2028</strong></div><div class="fact"><small>Location</small><strong>Vellore, Tamil Nadu, India</strong></div></div></div>
+      <aside class="objective"><h3>Career Objective</h3><p>Motivated M.Tech Computer Science and Engineering student specializing in Data Science, with a strong interest in data analysis, programming, and emerging technologies. Possess foundational knowledge of Python, C, C++, and Java, along with hands-on academic project experience. Eager to apply technical knowledge, develop practical skills, and contribute to organizational growth while continuously learning and improving.</p></aside>
+    </div>
+  </div></section>
+
+  <section id="skills" style="background:#fbfaff"><div class="wrap">
+    <div class="section-head"><div class="section-kicker">What I work with</div><h2>Technical Skills</h2></div>
+    <div class="skills-grid">
+      <div class="skill-group"><h3>Programming Languages</h3><div class="tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Java · Beginner</span></div></div>
+      <div class="skill-group"><h3>Tools</h3><div class="tags"><span class="tag">Visual Studio Code</span><span class="tag">Jupyter Notebook</span><span class="tag">Power BI</span></div></div>
+      <div class="skill-group"><h3>Areas of Interest</h3><div class="tags"><span class="tag">Data Science</span><span class="tag">Data Analytics</span><span class="tag">Information Technology</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="projects"><div class="wrap">
+    <div class="section-head"><div class="section-kicker">Selected academic work</div><h2>Projects</h2><p class="lead">A selection of academic projects exploring language technologies, data analysis and computing concepts.</p></div>
+    <article class="project">
+      <div class="project-label">Featured academic project · 01</div>
+      <div class="project-top"><div><h3>MedRoute AI</h3><p class="project-title">An NLP-Based Medical Specialist and Nearby Hospital Recommendation System</p></div></div>
+      <p>MedRoute AI is a web-based healthcare navigation system designed to simplify the process of finding appropriate medical specialists and nearby hospitals. It accepts symptoms entered in natural language, uses NLP techniques to interpret the description and identify a relevant medical specialty, and provides nearby hospital recommendations based on the user's selected location and preferred search radius.</p>
+      <div class="medroute">
+        <h4>1. Problem Statement</h4><p>People may find it difficult to identify an appropriate medical specialty from a description of their symptoms and locate nearby hospitals that meet their location preferences.</p>
+        <h4>2. Project Objectives</h4><p>Interpret symptom descriptions in natural language, identify relevant medical specialties, and simplify location-based discovery of nearby hospitals.</p>
+        <h4>3. Proposed System</h4><p>A healthcare navigation workflow that combines NLP-based symptom understanding with location- and radius-based hospital discovery.</p>
+        <h4>4. System Architecture</h4><p>Natural-language symptom input → NLP processing → medical specialty identification → location and radius input → nearby hospital recommendations.</p>
+        <h4>5. Working Process</h4>
+        <div class="steps"><div class="step">User enters symptoms in natural language.</div><div class="step">The system processes and interprets the text using NLP.</div><div class="step">Relevant medical specialties are identified.</div><div class="step">User provides or selects a location.</div><div class="step">Nearby hospitals are recommended based on location and radius.</div></div>
+        <h4>6. NLP Implementation</h4><p>NLP techniques are used to process users' natural-language symptom descriptions and support identification of the relevant medical specialty.</p>
+        <h4>7. Key Features</h4><p>Natural Language Processing · Symptom understanding · Medical specialist recommendation · Location-based hospital discovery · User-friendly healthcare navigation.</p>
+        <h4>8. Expected Outcomes</h4><p>A streamlined navigation experience that helps users move from a symptom description to relevant specialty guidance and nearby hospital options.</p>
+        <h4>9. Conclusion</h4><p>MedRoute AI brings symptom understanding and location-based discovery together in a single healthcare navigation concept. It is intended as a navigation aid, not a substitute for professional medical advice or emergency care.</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="assets/medroute-laptop.jpg" alt="Original photograph of the MedRoute AI project presentation displayed on a laptop" data-enlarge><figcaption>Original MedRoute AI project presentation</figcaption></figure>
+        <figure><img src="assets/medroute-team.jpg" alt="Original photograph of the student project team" data-enlarge><figcaption>Project team photograph</figcaption></figure>
+      </div>
+    </article>
+    <div class="simple-projects">
+      <article class="simple-project"><div class="project-label">Academic project · 02</div><h3>CityPulse</h3><p class="project-title">A Digital Twin for Predicting Urban Infrastructure Failures</p><p>A Flask-based urban infrastructure monitoring dashboard designed to represent and analyze public infrastructure complaints involving roads, drainage, water leakage and other urban utilities. The concept uses NLP-based text understanding, semantic similarity, spatial and temporal grouping, and environmental information to support infrastructure issue analysis.</p></article>
+      <article class="simple-project"><div class="project-label">Academic project · 03</div><h3>Jailer 2 Opinion Mining</h3><p class="project-title">Opinion Mining of YouTube Movie Trailer Comments</p><p>An academic project focused on analyzing YouTube movie trailer comments using text preprocessing, Bag of Words, TF-IDF and sentiment categorization into positive, negative and neutral opinions. The project also explored word clouds and visual analysis of user feedback.</p></article>
+      <article class="simple-project"><div class="project-label">Academic project · 04</div><h3>Quantum Logic Gates Simulation</h3><p class="project-title">Exploring Quantum Circuits with Qiskit</p><p>An academic simulation project using Qiskit to explore quantum logic gates such as NOT, CNOT and Hadamard gates. The project demonstrates basic quantum circuit operations and simulation outputs.</p></article>
+    </div>
+  </div></section>
+
+  <section id="certifications"><div class="wrap">
+    <div class="section-head"><div class="section-kicker">Professional learning</div><h2>Certifications</h2></div>
+    <div class="cert-layout"><div class="cert-copy"><div class="project-label">Oracle University</div><h3>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h3><p>Issued by: Oracle University</p><p>Date: 22 July 2026</p><p style="margin-top:18px">A professional certification recognizing achievement in Oracle Cloud Infrastructure Generative AI.</p></div>
+    <img class="cert-image" src="assets/oracle-certificate.jpg" alt="Original Oracle Certified Professional Certificate of Recognition awarded to Nisha K" data-enlarge></div>
+  </div></section>
+
+  <section style="background:#fbfaff"><div class="wrap">
+    <div class="two-col">
+      <div><div class="section-head"><div class="section-kicker">Beyond technical skills</div><h2>Soft Skills</h2></div><ul class="plain-list"><li>Time Management</li><li>Communication</li><li>Adaptability to New Environments</li></ul>
+      <div class="section-head" style="margin-top:40px"><div class="section-kicker">Personal interests</div><h2>Interests</h2></div><ul class="plain-list"><li>Learning New Activities</li><li>Reading</li></ul></div>
+      <div><div class="section-head"><div class="section-kicker">Growing every day</div><h2>My Learning Journey</h2></div><div class="journey"><p>I enjoy learning continuously, exploring emerging technologies and applying new ideas through academic projects. Each project gives me an opportunity to strengthen my understanding, approach problems from different perspectives and build practical technical skills. I am curious, open to new experiences and motivated to keep improving as I grow in the field of Data Science.</p></div>
+      <div class="section-head" style="margin-top:34px"><div class="section-kicker">On my learning list</div><h2>Currently Exploring</h2><div class="exploring">Machine Learning</div></div>
+      <div class="section-head" style="margin-top:30px"><div class="section-kicker">Languages</div><h2>Languages</h2><div class="tags" style="margin-top:14px"><span class="tag">English</span><span class="tag">Tamil</span></div></div></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="section-head"><div class="section-kicker">Have a question or opportunity?</div><h2>Contact</h2><p style="color:#e1d8ed">I'd be happy to connect.</p></div>
+    <div class="contact-grid">
+      <div class="contact-item"><small>Email</small><a href="mailto:nishaakarthi100@gmail.com">nishaakarthi100@gmail.com</a></div>
+      <div class="contact-item"><small>Phone</small><a href="tel:+919786429677">+91 9786429677</a></div>
+      <div class="contact-item"><small>Location</small><span>Vellore, Tamil Nadu, India</span></div>
+    </div>
+    <p class="thanks">Thank You – Let's Connect!</p>
+  </div></section>
+</main>
+<footer class="footer">© <span id="year"></span> Nisha K · Personal Portfolio</footer>
+<div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="Enlarged image"><button id="closeModal" aria-label="Close enlarged image">×</button><img id="modalImage" alt=""></div>
+<script>
+  const menuButton=document.getElementById('menuButton');
+  const navigation=document.getElementById('navigation');
+  menuButton.addEventListener('click',()=>{const opened=navigation.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(opened));});
+  navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navigation.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  const modal=document.getElementById('imageModal'),modalImage=document.getElementById('modalImage');
+  document.querySelectorAll('[data-enlarge]').forEach(img=>img.addEventListener('click',()=>{modalImage.src=img.src;modalImage.alt=img.alt;modal.classList.add('open');document.body.style.overflow='hidden';}));
+  function closeModal(){modal.classList.remove('open');modalImage.src='';document.body.style.overflow='';}
+  document.getElementById('closeModal').addEventListener('click',closeModal);
+  modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body></html>
